@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Yoosun Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="hero" id="home">
+    <div class="hero__content">
+      <p class="eyebrow">Researcher · Optical Imaging & Computer Vision</p>
+      <h1>Yoosun Kim</h1>
+      <p class="subtitle">
+        As a KAIST Bio & Brain Engineering researcher, I aim for innovative research at the intersection of optical
+        imaging and deep learning.
+      </p>
+      <div class="hero__actions">
+        <a class="icon-btn" href="https://github.com/your-username" target="_blank" rel="noreferrer"
+          aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .5C5.6.5.5 5.6.5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.3.8-.6s0-1.2 0-2.2c-3.2.7-3.9-1.5-3.9-1.5-.6-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.2 1.9 1.2 1 .1.8.6 2.6.6s1.6-.5 2.6-.6c0 0 .7-1 1.9-1.2 0 0 1.2 0 .1.8 0 0-.7.3-1.3 1.7 0 0-.7 2.2-3.9 1.5 0 1 0 1.9 0 2.2 0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.6 18.4.5 12 .5z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noreferrer"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a class="icon-btn icon-btn--ghost" href="mailto:glorysun@kaist.ac.kr" aria-label="Send Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 5h18v14H3z" fill="none" />
+            <path d="M21 5H3v14h18V5zm-2 2-7 5-7-5h14zm0 10H5V8l7 5 7-5v9z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <img src="IMG_1144.JPG" alt="Yoosun Kim Profile Photo">
+    </div>
+  </header>
+
+  <nav class="nav">
+    <a href="#home">Intro</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="section" id="education">
+      <div class="section__header">
+        <p class="eyebrow">Education</p>
+        <h2>Education</h2>
+      </div>
+      <div class="education-container">
+        <ul class="education-list">
+          <li>
+            <p class="edu-term">2024.08 - Present</p>
+            <div>
+              <p class="edu-title">KAIST, MS in Bio & Brain Engineering</p>
+              <p class="edu-desc">Optical Imaging Lab (Advisor: Mooseok Jang)</p>
+            </div>
+          </li>
+          <li>
+            <p class="edu-term">2020.02 - 2024.08</p>
+            <div>
+              <p class="edu-title">KAIST, BS in Physics and Bio & Brain Engineering</p>
+              <!-- <p class="edu-desc">GPA: 3.70/4.30 (Cum Laude)</p> -->
+              <p class="edu-detail">Relevant Course: Optics, Laser Optics, Computer Vision, Computational Physics, etc.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section__header">
+        <p class="eyebrow">Research Experience</p>
+        <h2>Research Experience</h2>
+      </div>
+      <div class="research-list">
+        <article class="research-item">
+          <div class="research-header">
+            <h3>M.S. Researcher @ Optical Imaging Lab</h3>
+            <span class="research-term">2024.09 - Present</span>
+          </div>
+          <div class="research-gallery">
+            <div class="gallery-item"
+              onclick="openLightbox('page/00_research/00_TPAMI/jang1-3598457-large (1).gif', false)">
+              <p class="gallery-caption">Derivation of optical forward model : effect of Dynamic scattering layer
+                considering with spatial coherency and optical memory effect(TPAMI)</p>
+              <div class="media-container">
+                <img src="page/00_research/00_TPAMI/jang1-3598457-large (1).gif" alt="TPAMI Research">
+                <div class="click-overlay"><span class="zoom-icon">🔍</span></div>
+              </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('page/00_research/01_optica/optica.png', false)">
+              <p class="gallery-caption">Enabled spatial coherence through dynamic scattering media using focused
+                illumination, and developed a physics-guided joint optimization framework for phase reconstruction with
+                neural networks (Revision in Optica)</p>
+              <div class="media-container">
+                <img src="page/00_research/01_optica/optica.png" alt="Optica Research">
+                <div class="click-overlay"><span class="zoom-icon">🔍</span></div>
+              </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('page/00_research/02_nlos/nlos.png', false)">
+              <p class="gallery-caption">Occluder-based passive non-line-of-sight imaging by supervised synthetic data
+                with ray optics forward model</p>
+              <div class="media-container">
+                <img src="page/00_research/02_nlos/nlos.png" alt="NLOS Research">
+                <div class="click-overlay"><span class="zoom-icon">🔍</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="research-item">
+          <div class="research-header">
+            <h3>Undergraduate Researcher @ Optical Imaging Lab</h3>
+            <span class="research-term">2022.01 - 2024.08</span>
+          </div>
+          <ul class="research-details">
+            <li>Passive non-line-of-sight imaging with occluder by supervised synthetic data</li>
+            <li>Applied Bayesian optimization for hyperparameter selection in Wirtinger-based holographic reconstruction
+            </li>
+            <li>Correlation imaging through scattering layer/around corner via speckle pattern</li>
+            <li>Phase retrieval experiments (GS, HIO, Wirtinger, Deep Image Prior, etc.)</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="section__header">
+        <p class="eyebrow">Publications</p>
+        <h2>Publications</h2>
+      </div>
+      <div class="publication-list">
+        <article class="pub-item">
+          <span class="pub-tag">Journal</span>
+          <div class="pub-info">
+            <p class="pub-title">Video Diffusion Posterior Sampling for Seeing Beyond Dynamic Scattering Layers</p>
+            <p class="pub-authors">T. Kwon*, G. Song*, <strong>Y. Kim</strong>, J. Kim, J. C. Ye, M. Jang</p>
+            <p class="pub-venue">IEEE TPAMI, 2025</p>
+          </div>
+        </article>
+        <article class="pub-item">
+          <span class="pub-tag">Conference</span>
+          <div class="pub-info">
+            <p class="pub-title">Reliable reconstruction of passive non-line-of-sight imaging with occluder by deep
+              learning</p>
+            <p class="pub-authors"><strong>Y. Kim</strong>, M. Jang</p>
+            <p class="pub-venue">SPIE ABC 2023</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section__header">
+        <p class="eyebrow">Other Projects</p>
+        <h2>Other Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Biomedical Signal & AI</h3>
+          <p>Analyzed EMG, ECG, EEG signals (LabVIEW) and estimated viral mutation risk using protein language models.
+          </p>
+        </article>
+        <article class="project-card">
+          <h3>Computational Imaging</h3>
+          <p>Implemented phase retrieval algorithms using flow matching models and designed SHG setup based on Nd:YAG
+            laser.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="awards">
+      <div class="section__header">
+        <p class="eyebrow">Honors & Awards</p>
+        <h2>Honors & Awards</h2>
+      </div>
+      <ul class="award-list">
+        <li>
+          <span class="award-date">2024.08</span>
+          <div class="award-content">
+            <strong>Best Poster Award</strong>
+            <p>4th Quantitative Phase Imaging Symposium (Selected as Top 5 Oral Presentation)</p>
+          </div>
+        </li>
+        <li>
+          <span class="award-date">2023.11</span>
+          <div class="award-content">
+            <strong>Young Investigator's Award</strong>
+            <p>SPIE Advanced Biophotonics Conference (Selected as Top 10 Oral Presentation)</p>
+          </div>
+        </li>
+        <li>
+          <span class="award-date">2022.09</span>
+          <div class="award-content">
+            <strong>Loonshot Startup Challenge</strong>
+            <p>KAIST (Team Leader, Data-driven relationship platform)</p>
+          </div>
+        </li>
+        <li>
+          <span class="award-date">2024.02</span>
+          <div class="award-content">
+            <strong>ASAN Biomedical Science Undergraduate Scholarship</strong>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="section" id="contact">
+    <div class="section__header">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="contact">
+      <div>
+        <p class="contact__label">Email</p>
+        <a href="mailto:glorysun@kaist.ac.kr">glorysun@kaist.ac.kr</a>
+      </div>
+      <div>
+        <p class="contact__label">LinkedIn</p>
+        <a href="https://www.linkedin.com/in/your-profile/" target="_blank"
+          rel="noreferrer">linkedin.com/in/your-profile</a>
+      </div>
+      <div>
+        <p class="contact__label">GitHub</p>
+        <a href="https://github.com/your-username" target="_blank" rel="noreferrer">github.com/your-username</a>
+      </div>
+    </div>
+    <p class="copyright">© 2024 Yoosun Kim. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox for PDF/Images -->
+  <div id="pdf-lightbox" class="lightbox" onclick="this.style.display='none'">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <span class="close-btn" onclick="document.getElementById('pdf-lightbox').style.display='none'">&times;</span>
+      <embed id="lightbox-embed" src="" type="application/pdf"
+        style="display:none; width:100%; height:100%; border-radius:8px;">
+      <img id="lightbox-img" src="" alt=""
+        style="display:none; width:100%; height:100%; object-fit:contain; border-radius:8px;">
+    </div>
+  </div>
+
+  <script>
+    function openLightbox(src, isPdf) {
+      const lightbox = document.getElementById('pdf-lightbox');
+      const embed = document.getElementById('lightbox-embed');
+      const img = document.getElementById('lightbox-img');
+
+      if (isPdf) {
+        embed.src = src + '#toolbar=0&navpanes=0&scrollbar=0&view=Fit';
+        embed.style.display = 'block';
+        img.style.display = 'none';
+      } else {
+        img.src = src;
+        img.style.display = 'block';
+        embed.style.display = 'none';
+      }
+      lightbox.style.display = 'flex';
+    }
+  </script>
+</body>
+
+</html>
