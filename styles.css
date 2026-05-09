@@ -378,8 +378,11 @@ a {
     justify-content: center;
   }
 
-  .btn {
-    width: 100%;
+  .hero__actions .btn {
+    width: auto;
+    flex: 0 0 auto;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.85rem;
     text-align: center;
   }
 }
