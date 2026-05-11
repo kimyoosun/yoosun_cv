@@ -19,6 +19,29 @@
       gtag('js', new Date());
       gtag('config', 'G-J3C0NMQ6E0');
     }
+
+    function trackPublicationClick(paperTitle, paperUrl, paperVenue) {
+      if (typeof gtag !== 'function') {
+        return;
+      }
+
+      gtag('event', 'publication_click', {
+        paper_title: paperTitle,
+        paper_url: paperUrl,
+        paper_venue: paperVenue
+      });
+    }
+
+    function trackResearchThumbnailClick(projectTitle, imagePath) {
+      if (typeof gtag !== 'function') {
+        return;
+      }
+
+      gtag('event', 'research_thumbnail_click', {
+        project_title: projectTitle,
+        image_path: imagePath
+      });
+    }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,7 +135,7 @@
           <p class="research-note">Currently on leave for active duty military service.</p>
           <div class="research-gallery">
             <div class="gallery-item"
-              onclick="openLightbox('page/00_research/00_TPAMI/jang1-3598457-large (1).gif', false)">
+              onclick="trackResearchThumbnailClick('VDPS / Dynamic Scattering Layers', 'page/00_research/00_TPAMI/jang1-3598457-large (1).gif'); openLightbox('page/00_research/00_TPAMI/jang1-3598457-large (1).gif', false)">
               <p class="gallery-caption">Derived optical forward models for dynamic scattering media considering
                 spatial coherence and optical memory effects (IEEE TPAMI).</p>
               <div class="media-container">
@@ -121,7 +144,8 @@
               </div>
             </div>
 
-            <div class="gallery-item" onclick="openLightbox('page/00_research/01_Optica/optica.png', false)">
+            <div class="gallery-item"
+              onclick="trackResearchThumbnailClick('Single-shot Imaging of Phase Objects', 'page/00_research/01_Optica/optica.png'); openLightbox('page/00_research/01_Optica/optica.png', false)">
               <p class="gallery-caption">Enabled spatial coherence through dynamic scattering media using focused
                 illumination, and developed a physics-guided joint optimization framework for phase reconstruction with
                 neural networks (revision in Optica).</p>
@@ -131,7 +155,8 @@
               </div>
             </div>
 
-            <div class="gallery-item" onclick="openLightbox('page/00_research/02_NLOS/nlos.png', false)">
+            <div class="gallery-item"
+              onclick="trackResearchThumbnailClick('Passive NLOS Imaging with Occluder', 'page/00_research/02_NLOS/nlos.png'); openLightbox('page/00_research/02_NLOS/nlos.png', false)">
               <p class="gallery-caption">Developed occluder-based passive non-line-of-sight imaging using supervised
                 learning with a ray-optics forward model.</p>
               <div class="media-container">
@@ -176,7 +201,8 @@
           <span class="pub-tag">Journal</span>
           <div class="pub-info">
             <p class="pub-title">
-              <a href="https://doi.org/10.1109/TPAMI.2025.3598457" target="_blank" rel="noreferrer">
+              <a href="https://doi.org/10.1109/TPAMI.2025.3598457" target="_blank" rel="noreferrer"
+                onclick="trackPublicationClick('Video Diffusion Posterior Sampling for Seeing Beyond Dynamic Scattering Layers', 'https://doi.org/10.1109/TPAMI.2025.3598457', 'IEEE TPAMI')">
                 Video Diffusion Posterior Sampling for Seeing Beyond Dynamic Scattering Layers
               </a>
             </p>
@@ -188,7 +214,8 @@
           <span class="pub-tag">Conference</span>
           <div class="pub-info">
             <p class="pub-title">
-              <a href="https://doi.org/10.1117/12.3017933" target="_blank" rel="noreferrer">
+              <a href="https://doi.org/10.1117/12.3017933" target="_blank" rel="noreferrer"
+                onclick="trackPublicationClick('Reliable reconstruction of passive non-line-of-sight imaging with occluder by deep learning', 'https://doi.org/10.1117/12.3017933', 'SPIE Advanced Biophotonics Conference')">
                 Reliable reconstruction of passive non-line-of-sight imaging with occluder by deep learning
               </a>
             </p>
