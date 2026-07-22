@@ -499,6 +499,16 @@ a {
   font-size: 0.9rem;
 }
 
+.pub-venue a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.pub-venue a:hover {
+  color: var(--accent);
+}
+
 /* Projects Grid */
 .projects-grid {
   display: grid;
